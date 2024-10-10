@@ -11,6 +11,21 @@ export const server = () => {
   ) => {
     $server = getServerSocket(port, onRequest);
     console.log(`Started on :${port}`);
+
+    $server.on(
+      "guest",
+      (
+        clientId: string,
+        [serverId, token]: string[],
+        connInfo: Deno.ServeHandlerInfo,
+      ) => {
+        const ip = connInfo.remoteAddr.hostname;
+        console.log(clientId, serverId, token, ip);
+
+        //connInfo.remoteAddr.hostname
+        return false;
+      },
+    );
   };
 
   return {

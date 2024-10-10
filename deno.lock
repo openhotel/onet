@@ -2,7 +2,7 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "jsr:@da/socket@2.0.2": "jsr:@da/socket@2.0.2",
+      "jsr:@da/socket@2.1.0": "jsr:@da/socket@2.1.0",
       "jsr:@oh/utils@1.2.3": "jsr:@oh/utils@1.2.3",
       "jsr:@oh/yaml@1.1.0": "jsr:@oh/yaml@1.1.0",
       "jsr:@std/fs@1.0.4": "jsr:@std/fs@1.0.4",
@@ -12,8 +12,8 @@
       "npm:dayjs@1.11.13": "npm:dayjs@1.11.13"
     },
     "jsr": {
-      "@da/socket@2.0.2": {
-        "integrity": "bca959ad3da7a4cb600d7daa569809a8801948f49a138a27e31d2ff8399e55cf"
+      "@da/socket@2.1.0": {
+        "integrity": "f88593772db6d9c4d36d3eaf0c14d253fd93b462a7bcbe4ea9cb8da136d01792"
       },
       "@oh/utils@1.2.3": {
         "integrity": "6ca24af5ef4f812ef675844109adfdcd30f39bd7ce06695f214bd63b6f0bdab4",
@@ -67,7 +67,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@da/socket@2.0.2",
+      "jsr:@da/socket@2.1.0",
       "jsr:@oh/queue@1.1.1",
       "jsr:@oh/utils@1.2.3"
     ],
